@@ -3,14 +3,27 @@
     <head>
         <meta charset="utf-8">
         <title>Odin Recipes</title>
+
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <main>
-            <h1>Odin Recipes</h1>
-            <a href="./recipes/mac_and_cheese.html">Mac and Cheese</a>
-            <a href="./recipes/seared_steak.html">Seared Steak</a>
-            <a href="./recipes/crispy_potatoes.html">Crispy Potatoes</a>
+            <div id="main-container">
+                <h1 id="title">🍽️Odin Recipes🍽️</h1>
+                <ul id="recipe-list">
+                    <li class="recipe">
+                        <a class="recipe-link" href="./recipes/mac_and_cheese.html">Mac and Cheese</a>
+                    </li>
+                    <li class="recipe">
+                        <a class="recipe-link" href="./recipes/seared_steak.html">Seared Steak</a>
+                    </li>
+                    <li class="recipe">
+                        <a class="recipe-link" href="./recipes/crispy_potatoes.html">Crispy Potatoes</a>
+                    </li>
+                </ul>
+            </div>
+            <p id="expand-info">*Click one of the following recipes to expand</p>
         </main>
     </body>
 </html>
