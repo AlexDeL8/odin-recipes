@@ -33,12 +33,14 @@ main {
 
 h1 {
     font-size: 32px;
+    font-weight: bold;
     text-decoration: underline;
     margin: 15px 0px;
 }
 
 h2 {
     font-size: 20px;
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -84,9 +86,8 @@ h2 {
 }
 
 .modal-content {
-    display: none;
     background-color: rgb(225, 225, 205);
-    padding: 20px;
+    padding: 50px;
     margin: 20px auto;
     border: 7px solid black;
     height: auto;
@@ -95,4 +96,26 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.close {
+    font-size: 20px;
+    float: right;
+}
+
+.close:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#mac-and-cheese-recipe {
+    display: none;
+}
+
+#seared-steak-recipe {
+    display: none;
+}
+
+#crispy-potatoes-recipe {
+    display: none;
 }

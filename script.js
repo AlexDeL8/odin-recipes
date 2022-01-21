@@ -1,8 +1,24 @@
 'use strict'
 
 let modal = document.getElementById('recipe-modal')
+let recipeModalContentArray = Array.from(document.getElementsByClassName('modal-content'));
+function closeModal() {
+    modal.style.display = "none";
+    for(let recipeModal of recipeModalContentArray) {
+        recipeModal.style.display = "none";
+    }
+}
+
 window.onclick = function(event) {
-    if (event.target == modal) modal.style.display = "none";
+    if (event.target == modal) 
+        closeModal()
+}
+
+let closeButtons = Array.from(document.getElementsByClassName('close'));
+for(let closeButton of closeButtons) {
+    closeButton.addEventListener('click', (e) => {
+        closeModal()
+    });
 }
 
 let recipeElementsArray = Array.from(document.getElementsByClassName('recipe-link'));
@@ -21,15 +37,6 @@ for(let recipeElement of recipeElementsArray) {
 
     recipeElement.addEventListener('click', (e) => {
         modal.style.display = "block";
-        switch (e.target.getAttribute('id')) {
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            default:
-                console.log('ERROR - Modal selection NOT valid')
-        }
+        document.getElementById(e.target.getAttribute('id')+'-recipe').style.display = "block";
     });
 }
