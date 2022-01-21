@@ -11,7 +11,7 @@
     }
 
 main {
-    background-color: rgb(224, 224, 204);
+    background-color: rgb(225, 225, 205);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -33,12 +33,14 @@ main {
 
 h1 {
     font-size: 32px;
+    font-weight: bold;
     text-decoration: underline;
     margin: 15px 0px;
 }
 
 h2 {
     font-size: 20px;
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -59,6 +61,7 @@ h2 {
 }
 
 .recipe-link:hover {
+    cursor: pointer;
     text-decoration: underline;
     color: rgb(105, 105, 253);
 }
@@ -67,4 +70,52 @@ h2 {
     color: grey;
     font-style: italic;
     font-size: 14px;
+}
+
+#recipe-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    background-color: rgb(225, 225, 205);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: rgb(225, 225, 205);
+    padding: 50px;
+    margin: 20px auto;
+    border: 7px solid black;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    font-size: 20px;
+    float: right;
+}
+
+.close:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#mac-and-cheese-recipe {
+    display: none;
+}
+
+#seared-steak-recipe {
+    display: none;
+}
+
+#crispy-potatoes-recipe {
+    display: none;
 }
