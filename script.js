@@ -40,3 +40,7 @@ for(let recipeElement of recipeElementsArray) {
         document.getElementById(e.target.getAttribute('id')+'-recipe').style.display = "block";
     });
 }
+
+let gitIconElement = document.getElementById('git-icon-img')
+gitIconElement.addEventListener('mouseenter', (e) => e.target.src = './imgs/git-icon-active.png');
+gitIconElement.addEventListener('mouseleave', (e) => e.target.src = './imgs/git-icon-inactive.png');
