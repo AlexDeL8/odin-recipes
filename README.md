@@ -14,7 +14,7 @@
 - This is the **Odin Recipes project** to practice what was learned in the **HTML Foundations** section of the **Foundations** portion in [The Odin Project](https://www.theodinproject.com/dashboard)
     - The requirements of this projects included ustilizing multiple tags learned to create a proper recipe layout (i.e. headings, lists, divs, and text tags)
     - I made the decsion to also include modals to make this project function like a single-page app when viewing recipes (versus the original project specs that said to use seperate HTML files)
-- View the app HERE ((GitHub Page TBD))
+- Visit the project: 🖥️[**Odin Recipes**](https://alexdel8.github.io/odin-recipes/)
 
 
 ## Technologies Used
